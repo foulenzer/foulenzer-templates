@@ -1,0 +1,59 @@
+id: foulenzer-wordpress
+info:
+  name: Wordpress workflow
+  author: Kiblyn11 & zomsop82 (edited by foulenzer)
+variables:
+
+  wordpress_tech: technologies/tech-detect.yaml
+  wordpress_dir_listing: files/wordpress-directory-listing.yaml
+  wordpress_user_enum: files/wordpress-user-enumeration.yaml
+  wordpress_wpconfig: security-misconfiguration/wordpress-accessible-wpconfig.yaml
+  wordpress_duplicator_path_traversal: vulnerabilities/wordpress-duplicator-path-traversal.yaml
+  wordpress_wordfence_xss: vulnerabilities/wordpress-wordfence-xss.yaml
+  wordpress_debug_log: files/wordpress-debug-log.yaml
+  wordpress_db_backup: files/wordpress-db-backup.yaml
+  wordpress_emergency_script: files/wordpress-emergency-script.yaml
+  wordpress_installer_log: files/wordpress-installer-log.yaml
+  wordpress_tmm_db_migrate: files/wordpress-tmm-db-migrate.yaml
+  wordpress_social_metrics_tracker: vulnerabilities/wordpress-social-metrics-tracker.yaml
+  w3c_total_cache_ssrf: vulnerabilities/w3c-total-cache-ssrf.yaml
+  wordpress_cve: cves/CVE-2019-9978.yaml
+  wordpress_cve_2: cves/CVE-2019-6715.yaml
+  wordpress_cve_3: cves/CVE-2020-24312.yaml
+  wordpress_cve_4: cves/CVE-2019-6112.yaml
+  wordpress_cve_5: cves/CVE-2018-18069.yaml
+  wordpress_cve_6: cves/CVE-2019-19985.yaml
+  wordpress_cve_7: cves/CVE-2019-15858.yaml
+  wordpress_cve_8: cves/CVE-2017-14537.yaml
+  wordpress_xmlrpc: files/wp-xmlrpc.yaml
+  wordpress_woomails: vulnerabilities/wordpress-emails-verification-for-woocommerce.yaml
+
+logic: |
+  wordpress_tech()
+
+  if wordpress_tech["wordpress"] {
+
+    wordpress_dir_listing()
+    wordpress_user_enum()
+    wordpress_wpconfig()
+    wordpress_duplicator_path_traversal()
+    wordpress_wordfence_xss()
+    wordpress_debug_log()
+    wordpress_db_backup()
+    wordpress_emergency_script()
+    wordpress_installer_log()
+    wordpress_tmm_db_migrate()
+    wordpress_social_metrics_tracker()
+    w3c_total_cache_ssrf()
+    wordpress_cve()
+    wordpress_cve_2()
+    wordpress_cve_3()
+    wordpress_cve_4()
+    wordpress_cve_5()
+    wordpress_cve_6()
+    wordpress_cve_7()
+    wordpress_cve_8()
+    wordpress_xmlrpc()
+    wordpress_woomails()
+
+  }
