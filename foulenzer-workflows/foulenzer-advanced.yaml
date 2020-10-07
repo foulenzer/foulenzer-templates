@@ -1,0 +1,37 @@
+id: foulenzer-advanced
+info:
+  name: Advanced workflow with multiple requests
+  author: foulenzer
+variables:
+
+  generic1: generic-detections/basic-xss-prober.yaml
+  generic2: generic-detections/general-tokens.yaml
+  generic3: generic-detections/top-15-xss.yaml
+  file1:  files/dir-listing.yaml
+  file2:  files/git-config.yaml
+  file3:  files/htaccess-config.yaml
+  file4:  files/phpinfo.yaml
+  file5:  files/public-tomcat-instance.yaml
+  file6:  files/server-status-localhost.yaml
+  file7:  files/shell-history.yaml
+  file8:  files/sql-dump.yaml
+  file9:  files/web-config.yaml
+  file10:  files/wp-xmlrpc.yaml
+  file11:  files/zip-backup-files.yaml
+  
+logic:
+  |
+  generic1()
+  generic2()
+  generic3()
+  file1()
+  file2()
+  file3()
+  file4()
+  file5()
+  file6()
+  file7()
+  file8()
+  file9()
+  file10()
+  file11()
