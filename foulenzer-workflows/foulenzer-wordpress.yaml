@@ -4,7 +4,6 @@ info:
   author: Kiblyn11 & zomsop82 (edited by foulenzer)
 variables:
 
-  wordpress_tech: technologies/tech-detect.yaml
   wordpress_dir_listing: files/wordpress-directory-listing.yaml
   wordpress_user_enum: files/wordpress-user-enumeration.yaml
   wordpress_wpconfig: security-misconfiguration/wordpress-accessible-wpconfig.yaml
@@ -28,10 +27,6 @@ variables:
   wordpress_woomails: vulnerabilities/wordpress-emails-verification-for-woocommerce.yaml
 
 logic: |
-  wordpress_tech()
-
-  if wordpress_tech["wordpress"] {
-
     wordpress_dir_listing()
     wordpress_user_enum()
     wordpress_wpconfig()
@@ -54,4 +49,3 @@ logic: |
     wordpress_xmlrpc()
     wordpress_woomails()
 
-  }
