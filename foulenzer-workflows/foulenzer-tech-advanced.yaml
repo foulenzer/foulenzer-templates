@@ -6,7 +6,6 @@ variables:
 
   bigip: technologies/bigip-config-utility-detect.yaml
   citrix: technologies/citrix-vpn-detect.yaml
-  gitlab: technologies/gitlab-detect.yaml
   graphql: technologies/graphql.yaml
   sap_netweaver_java: technologies/sap-netweaver-as-java-detect.yaml
   sap_netweaver: technologies/sap-netweaver-detect.yaml
@@ -25,7 +24,6 @@ logic:
   |
   bigip()
   citrix()
-  gitlab()
   graphql()
   sap_netweaver_java()
   sap_netweaver()
