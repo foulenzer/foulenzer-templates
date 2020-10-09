@@ -4,12 +4,12 @@ info:
   author: foulenzer
 variables:
 
-  cve-2020-9484: technologies/bigip-config-utility-detect.yaml
-  public-tomcat-instance: technologies/citrix-vpn-detect.yaml
-  tomcat-scripts: technologies/gitlab-detect.yaml
-  tomcat-manager-pathnormalization: technologies/graphql.yaml
-  cve-2018-11759: technologies/sap-netweaver-as-java-detect.yaml
-  tomcat-manager-default: technologies/sap-netweaver-detect.yaml
+  cve-2020-9484: cves/CVE-2020-9484.yaml
+  public-tomcat-instance: files/public-tomcat-instance.yaml
+  tomcat-scripts: files/tomcat-scripts.yaml
+  tomcat-manager-pathnormalization: vulnerabilities/tomcat-manager-pathnormalization.yaml
+  cve-2018-11759: cves/CVE-2018-11759.yaml
+  tomcat-manager-default: default-credentials/tomcat-manager-default.yaml
   
 logic:
   |
