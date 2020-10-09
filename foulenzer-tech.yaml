@@ -445,9 +445,4 @@ requests:
           - "X-Jenkins"
         part: header
 
-      - type: word
-        name: akamai
-        words:
-          - "AkamaiGHost"
-        part: header
   
