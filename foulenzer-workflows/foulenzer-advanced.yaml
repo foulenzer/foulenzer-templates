@@ -18,6 +18,8 @@ variables:
   file9:  files/web-config.yaml
   file10:  files/wp-xmlrpc.yaml
   file11:  files/zip-backup-files.yaml
+  arbitrary_fr: fuzzing/arbitrary-file-read.yaml
+  directory_trav: fuzzing/directory-traversal.yaml
   
 logic:
   |
@@ -35,3 +37,5 @@ logic:
   file9()
   file10()
   file11()
+  arbitrary_fr()
+  directory_trav()
