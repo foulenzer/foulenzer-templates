@@ -1,7 +1,7 @@
 id: foulenzer-tech
 info:
   name: WebApp tech detection
-  author: hakluke (edited by foulenzer)
+  author: hakluke (edited by @foulenzer)
   severity: info
 requests:
   - method: GET
