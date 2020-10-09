@@ -446,12 +446,6 @@ requests:
         part: header
 
       - type: word
-        name: cloudflare
-        words:
-          - "cloudflare"
-        part: header
-
-      - type: word
         name: akamai
         words:
           - "AkamaiGHost"
