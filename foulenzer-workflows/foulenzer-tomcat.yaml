@@ -1,0 +1,22 @@
+id: foulenzer-tomcat
+info:
+  name: Advanced workflow for tomcat
+  author: foulenzer
+variables:
+
+  cve-2020-9484: technologies/bigip-config-utility-detect.yaml
+  public-tomcat-instance: technologies/citrix-vpn-detect.yaml
+  tomcat-scripts: technologies/gitlab-detect.yaml
+  tomcat-manager-pathnormalization: technologies/graphql.yaml
+  cve-2018-11759: technologies/sap-netweaver-as-java-detect.yaml
+  tomcat-manager-default: technologies/sap-netweaver-detect.yaml
+  
+logic:
+  |
+  cve-2020-9484()
+  public-tomcat-instance()
+  tomcat-scripts()
+  tomcat-manager-pathnormalization()
+  cve-2018-11759()
+  tomcat-manager-default()
+ 
