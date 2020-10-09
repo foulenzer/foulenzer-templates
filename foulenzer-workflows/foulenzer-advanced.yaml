@@ -5,7 +5,6 @@ info:
 variables:
 
   generic1: generic-detections/basic-xss-prober.yaml
-  generic2: generic-detections/general-tokens.yaml
   generic3: generic-detections/top-15-xss.yaml
   file1:  files/dir-listing.yaml
   file2:  files/git-config.yaml
@@ -24,7 +23,6 @@ variables:
 logic:
   |
   generic1()
-  generic2()
   generic3()
   file1()
   file2()
