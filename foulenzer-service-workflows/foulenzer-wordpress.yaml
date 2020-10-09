@@ -1,7 +1,7 @@
 id: foulenzer-wordpress
 info:
   name: Wordpress workflow
-  author: Kiblyn11 & zomsop82 (edited by foulenzer)
+  author: Kiblyn11 & zomsop82 (edited by @foulenzer)
 variables:
 
   wordpress_dir_listing: files/wordpress-directory-listing.yaml
