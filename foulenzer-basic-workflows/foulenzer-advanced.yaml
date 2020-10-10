@@ -6,6 +6,7 @@ variables:
 
   generic1: generic-detections/basic-xss-prober.yaml
   generic3: generic-detections/top-15-xss.yaml
+  tokens: tokens/credentials-disclosure.yaml
   file2:  files/git-config.yaml
   file3:  files/htaccess-config.yaml
   file4:  files/phpinfo.yaml
@@ -23,6 +24,7 @@ logic:
   |
   generic1()
   generic3()
+  tokens()
   file2()
   file3()
   file4()
