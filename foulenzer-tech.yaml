@@ -88,6 +88,7 @@ requests:
           - 'content="vBulletin'
         part: body
 
+      - type: regex
         name: typo3-cms
         regex:
           - <link[^>]+ href="/?typo3(?:conf|temp)/
