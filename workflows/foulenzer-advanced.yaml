@@ -4,7 +4,6 @@ info:
   author: foulenzer
 variables:
 
-  generic1: generic-detections/basic-xss-prober.yaml
   generic3: generic-detections/top-15-xss.yaml
   file2:  files/git-config.yaml
   file5:  files/public-tomcat-instance.yaml
@@ -15,7 +14,6 @@ variables:
   
 logic:
   |
-  generic1()
   generic3()
   file2()
   file5()
