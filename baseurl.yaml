@@ -1,0 +1,77 @@
+id: baseurl
+
+info:
+  name: all templates I use requesting only the BaseURL
+  author: foulenzer
+  severity: low
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/"
+
+    redirects: true
+    max-redirects: 2
+    matchers-condition: or
+    matchers:
+      - type: word
+        name: airflow-exposure (MEDIUM)
+        words:
+          - '<title>Airflow - DAGs</title>'
+          - '<a href="https://github.com/apache/airflow">'
+        condition: and
+      - type: word
+        name: ambari-exposure (MEDIUM)
+        words:
+          - '<title>Ambari</title>'
+          - 'href="http://www.apache.org/licenses/LICENSE-2.0"'
+        condition: and
+      - type: word
+        name: ansible-tower-exposure
+        words:
+          - "<title>Ansible Tower</title>"
+          - "ansible-main-menu"
+        condition: and
+      - type: word
+        name: couchdb-fauxton
+        words:
+          - '<title>Project Fauxton</title>'
+      - type: word
+        name: druid-console-exposure (MEDIUM)
+        words:
+          - 'src="/druid.js"'
+          - 'href="/druid.css"'
+        condition: and
+      - type: word
+        name: flink-exposure
+        words:
+          - '<title>Apache Flink Web Dashboard</title>'
+      - type: word
+        name: kafka-connect-ui
+        words:
+          - '<title>Kafka Connect UI</title>'
+      - type: word
+        name: kafka-monitoring
+        words:
+          - '>KafkaMonitor</a>'
+          - '>Kafka Monitor GUI</h1>'
+      - type: word
+        name: kafka-topics-ui
+        words:
+          - '<title>Kafka Topics UI - Browse Kafka Data</title>'
+      - type: word
+        name: kubernetes-dashboard
+        words:
+          - "Kubernetes Dashboard</title>"
+      - type: word
+        name: rocketmq-console-exposure (MEDIUM)
+        words:
+          - "<title>RocketMq-console-ng</title>"
+
+
+
+
+
+
+
+
