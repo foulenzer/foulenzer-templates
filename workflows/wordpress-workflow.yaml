@@ -27,4 +27,3 @@ workflows:
           - template: vulnerabilities/wordpress/wordpress-social-metrics-tracker.yaml
           - template: vulnerabilities/wordpress/wordpress-wordfence-xss.yaml
           - template: vulnerabilities/wordpress/wordpress-wpcourses-info-disclosure.yaml
-          - template: vulnerabilities/wordpress/wp-enabled-registration.yaml
